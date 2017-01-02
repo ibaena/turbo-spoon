@@ -1,0 +1,30 @@
+/******************
+    Nav Styles
+*****************/
+.nav-container {
+    .activate-nav {
+        border-style: solid;
+        border-width: thin;
+        border-color: black;
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 99999;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .nav-wrapper {
+        background-color: blue;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 10;
+    }
+}

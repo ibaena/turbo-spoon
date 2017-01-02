@@ -1,0 +1,17 @@
+/******************
+  Border Styles
+*******************/
+
+.border-container {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+
+  .btn-slide-dn {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    width: 200px;
+    height: 40px;
+  }
+}

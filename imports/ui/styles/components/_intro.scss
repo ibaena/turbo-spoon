@@ -1,0 +1,30 @@
+/******************************
+    Intro Component Styles
+******************************/
+.intro-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #1e1c27;
+    position: absolute;
+    background-image: url('images/intro/ivan-stencil.png');
+    background-size: cover;
+    background-position: center;
+
+    .intro-overlay {
+        background-color: #1e1c27;
+        height: 100vh;
+        width: 100%;
+        opacity: 0.7;
+        position: absolute;
+    }
+
+    .btn-slide {
+        border-style: solid;
+        border-width: thin;
+        border-color: lightgray;
+        width: 200px;
+        height: 40px;
+        z-index: 10;
+        position: absolute;
+    }
+}
