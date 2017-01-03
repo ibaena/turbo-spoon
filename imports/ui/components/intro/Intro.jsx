@@ -9,15 +9,30 @@ export default class Intro extends Component {
   }
 
   componentDidMount(){
-    $('.btn-slide').on('click', () => {
-      $('.intro-container').hide('slide',{direction:'up'},600);
+    let page = 1
+    $(window).bind('mousewheel', function(e){
+
+
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            $('.intro-container').show('slide',{direction:'up'},600);
+            page = page - 1;
+            if (page < 1 ) {
+              page = 1;
+            };
+
+        }
+        else{
+            $('.intro-container').hide('slide',{direction:'up'},600);
+            page = page +1;
+        }
+
+
     });
   }
   render() {
     return (
       <div className="intro-container">
         <div className="intro-overlay"></div>
-          <div className="btn-slide">SLide</div>
       </div>
     );
   }
