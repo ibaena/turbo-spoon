@@ -33,19 +33,23 @@ export default class Nav extends Component {
 
       switch(compare) {
           case 'menu-1':
-            list.find('#menu-img-1').show();
+            list.find('#menu-img-1').show().animate({ 'zoom': 1.2 }, 400);
+              break;;
               break;
           case 'menu-2':
-            list.find('#menu-img-2').show();
+            list.find('#menu-img-2').show().animate({ 'zoom': .9 }, 400);
               break;
           case 'menu-3':
-            list.find('#menu-img-3').show();
+            list.find('#menu-img-3').show().animate({ 'zoom': .9 }, 400);
+              break;;
               break;
           case 'menu-4':
-            list.find('#menu-img-4').show();
+            list.find('#menu-img-4').show().animate({ 'zoom': .9 }, 400);
+              break;;
               break;
           case 'menu-5':
-            list.find('#menu-img-5').show();
+            list.find('#menu-img-5').show().animate({ 'zoom': .9 }, 400);
+              break;;
               break;
       }
     })
@@ -54,19 +58,19 @@ export default class Nav extends Component {
 
       switch(compare) {
           case 'menu-1':
-            list.find('#menu-img-1').hide();
+            list.find('#menu-img-1').hide().animate({ 'zoom': 1 }, 400);
               break;
           case 'menu-2':
-            list.find('#menu-img-2').hide();
+            list.find('#menu-img-2').hide().animate({ 'zoom': 1 }, 400);
               break;
           case 'menu-3':
-            list.find('#menu-img-3').hide();
+            list.find('#menu-img-3').hide().animate({ 'zoom': 1 }, 400);
               break;
           case 'menu-4':
-            list.find('#menu-img-4').hide();
+            list.find('#menu-img-4').hide().animate({ 'zoom': 1 }, 400);
               break;
           case 'menu-5':
-            list.find('#menu-img-5').hide();
+            list.find('#menu-img-5').hide().animate({ 'zoom': 1 }, 400);
               break;
       }
     })
