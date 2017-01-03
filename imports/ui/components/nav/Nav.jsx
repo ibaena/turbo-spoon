@@ -33,23 +33,19 @@ export default class Nav extends Component {
 
       switch(compare) {
           case 'menu-1':
-            list.find('#menu-img-1').show().animate({ 'zoom': 1.2 }, 500);
-
+            list.find('#menu-img-1').fadeIn(300);
               break;
           case 'menu-2':
-            list.find('#menu-img-2').show().animate({ 'zoom': .9 }, 500);
+            list.find('#menu-img-2').show().animate({ 'zoom': .9 }, 400);
               break;
           case 'menu-3':
-            list.find('#menu-img-3').show().animate({ 'zoom': .9 }, 500);
-              break;;
+            list.find('#menu-img-3').show().animate({ 'zoom': .9 }, 400);
               break;
           case 'menu-4':
-            list.find('#menu-img-4').show().animate({ 'zoom': .9 }, 500);
-              break;;
+            list.find('#menu-img-4').show().animate({ 'zoom': .9 }, 400);
               break;
           case 'menu-5':
-            list.find('#menu-img-5').show().animate({ 'zoom': .9 }, 500);
-              break;;
+            list.find('#menu-img-5').show().animate({ 'zoom': .9 }, 400);
               break;
       }
     })
@@ -58,19 +54,19 @@ export default class Nav extends Component {
 
       switch(compare) {
           case 'menu-1':
-            list.find('#menu-img-1').hide().animate({ 'zoom': 1 }, 400);
+            list.find('#menu-img-1').fadeOut(200);
               break;
           case 'menu-2':
-            list.find('#menu-img-2').hide().animate({ 'zoom': 1 }, 400);
+            list.find('#menu-img-2').hide().animate({ 'zoom': 1 },0);
               break;
           case 'menu-3':
-            list.find('#menu-img-3').hide().animate({ 'zoom': 1 }, 400);
+            list.find('#menu-img-3').hide().animate({ 'zoom': 1 },0);
               break;
           case 'menu-4':
-            list.find('#menu-img-4').hide().animate({ 'zoom': 1 }, 400);
+            list.find('#menu-img-4').hide().animate({ 'zoom': 1 },0);
               break;
           case 'menu-5':
-            list.find('#menu-img-5').hide().animate({ 'zoom': 1 }, 400);
+            list.find('#menu-img-5').hide().animate({ 'zoom': 1 },0);
               break;
       }
     })
@@ -90,7 +86,7 @@ export default class Nav extends Component {
     return this.getMenu().map((item) => (
       <li className="menu-item" key={item._id} id={'menu-item-'+item._id}>
         <a href={item.src} className="menu-item-link" id={'menu-'+ item._id}>{item.name}</a>
-        <img src={item.image} className="nav-image" id={'menu-img-'+ item._id}/>
+          <img src={item.image} className="nav-image" id={'menu-img-'+ item._id} />
       </li>
     ))
   }
