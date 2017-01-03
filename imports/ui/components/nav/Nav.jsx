@@ -19,6 +19,7 @@ export default class Nav extends Component {
 
 
     $('.activate-nav').on('click', () => {
+      $('.fancy-menu').toggleClass('active');
       $('.nav-wrapper').toggle('slide',{direction:'up'},700);
       setTimeout( () => {
         $('#center-nav').animate({width:'toggle'},1100);
@@ -94,7 +95,13 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="nav-container">
-          <div className="activate-nav">X</div>
+          <div className="activate-nav">
+            <div className="fancy-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div className="nav-wrapper">
             <ul className="menu-list">
               {this.renderMenu()}

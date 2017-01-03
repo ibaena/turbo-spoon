@@ -85,5 +85,37 @@
     z-index: -1;
     padding: 0;
 }
+/******************
+    Nav Button
+******************/
+.fancy-menu {
+    display: inline-block;
+}
 
-#menu-item-1 {}
+.fancy-menu span {
+    background: white;
+    border-radius: 1px;
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    padding: 0;
+    position: relative;
+    transition: all 0.2s ease;
+    width: 25px;
+}
+
+.fancy-menu.active span:nth-of-type(1) {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    top: 7px;
+}
+
+.fancy-menu.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.fancy-menu.active span:nth-of-type(3) {
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
+    top: -9px;
+}
