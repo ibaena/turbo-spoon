@@ -16,7 +16,11 @@ export default class Border extends Component {
     return (
       <div className="border-container container">
           <div id="project-border">
-            <div className="col-md-12"></div>
+          <div className="title-box"><p>text</p></div>
+            <div className="col-md-12">
+              Ivan
+            </div>
+            <div className="launch-box"><p>text</p></div>
           </div>
       </div>
     );

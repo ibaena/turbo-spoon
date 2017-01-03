@@ -23,10 +23,11 @@ export default class Nav extends Component {
       $('.nav-wrapper').toggle('slide',{direction:'up'},700);
       setTimeout( () => {
         $('#center-nav').animate({width:'toggle'},1100);
-      },800)
+      },800);
       setTimeout( () => {
         list.animate({height:'toggle'},1600);
-      },1200)
+      },1200);
+      $('.fancy-menu').find('span').toggleClass('white-bg');
     });
 
     list.find('.menu-item-link').on('mouseenter', function() {

@@ -17,20 +17,31 @@ export default class Intro extends Component {
 
         if(e.originalEvent.wheelDelta /120 > 0) {
             $('.intro-container').show('slide',{direction:'up'},600);
+            $('.fancy-menu').find('span').css({
+              'background-color':'black',
+            });
             page = page - 1;
             if (page < 1 ) {
               page = 1;
             };
+            if(page = 1){
+              $('.fancy-menu').find('span').css({
+                'background-color':'white',
+              });
+            }
         }
         else{
             $('.intro-container').hide('slide',{direction:'up'},600);
+            $('.fancy-menu').find('span').css({
+              'background-color':'black',
+            });
             page = page +1;
         }
     });
 
     setTimeout( () => {
-      $('#intro-para').animate({height:'toggle'},1100);
-    },400);
+      $('#intro-para').animate({height:'toggle'},800);
+    },600);
 
 
   }

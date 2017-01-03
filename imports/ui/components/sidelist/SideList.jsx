@@ -11,7 +11,7 @@ export default class SideList extends Component {
   componentDidMount(){
     $('.side-list-item').hide();
     setTimeout( () => {
-      $('.side-list-item').animate({height:'toggle'},800);
+      $('.side-list-item').animate({height:'toggle'},600);
     },1400);
   }
   render() {
