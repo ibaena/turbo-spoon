@@ -50,6 +50,7 @@
             bottom: -24px;
             left: 43%;
             text-align: center;
+            cursor: pointer;
 
             p {
                 margin: 0;
@@ -57,6 +58,21 @@
                 transform: translateY(-50%);
                 position: relative;
             }
+        }
+
+        .nav-box {
+            width: calc(3%);
+            height: calc(35% - 20px);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background: white;
+            text-align: center;
+            cursor: pointer;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: -25px;
+            bottom: 0;
+
         }
     }
 }

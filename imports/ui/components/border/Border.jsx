@@ -21,6 +21,7 @@ export default class Border extends Component {
               Ivan
             </div>
             <div className="launch-box"><p>text</p></div>
+            <div className="nav-box"><p>Nav</p></div>
           </div>
       </div>
     );
