@@ -95,6 +95,9 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="nav-container">
+      <span className="update-text">
+        Last Update:<span className="small-date"> &nbsp;January 2017</span>
+      </span>
           <div className="activate-nav">
             <div className="fancy-menu">
               <span></span>

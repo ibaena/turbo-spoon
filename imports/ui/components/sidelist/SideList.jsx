@@ -12,7 +12,7 @@ export default class SideList extends Component {
     $('.side-list-item').hide();
     setTimeout( () => {
       $('.side-list-item').animate({height:'toggle'},800);
-    },1200);
+    },1400);
   }
   render() {
     return (
@@ -20,7 +20,7 @@ export default class SideList extends Component {
         <ul className="side-list">
           <li className="side-list-item" id="side-1">Ivan Baena</li>
           <li className="side-list-item" id="side-2">Front End Developer</li>
-          <li className="side-list-item" id="side-3">Pennsylvania &nbsp;-->&nbsp; New Jersey &nbsp;-->&nbsp; New York</li>
+          <li className="side-list-item" id="side-3">Pennsylvania &nbsp;&nbsp;-->&nbsp;&nbsp; New Jersey &nbsp;&nbsp;-->&nbsp;&nbsp; New York</li>
         </ul>
       </div>
     );
