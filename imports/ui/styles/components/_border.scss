@@ -8,25 +8,20 @@
     z-index: -1;
 
     #project-border {
-        margin: 0 auto;
         border: 1px solid rgba(0, 0, 0, 0.2);
-        width: -moz-calc(100% - 200px);
-        height: -moz-calc(100% - 200px);
-        width: -webkit-calc(100% - 200px);
-        height: -webkit-calc(100% - 200px);
-        width: -o-calc(100% - 200px);
-        height: -o-calc(100% - 200px);
         width: calc(100% - 200px);
         height: calc(100% - 200px);
         background: none !important;
-        top: 50%;
-        transform: translateY(-50%);
-        position: relative;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
 
         .title-box {
             width: calc(10% + 20px);
             height: calc(10% - 35px);
-            border: 1px solid rgba(0, 0, 0, 0.2);
             background: white;
             position: absolute;
             top: -24px;
@@ -48,9 +43,11 @@
             background: white;
             position: absolute;
             bottom: -24px;
-            left: 43%;
+            left: 0;
             text-align: center;
             cursor: pointer;
+            right: 0;
+            margin: auto;
 
             p {
                 margin: 0;
@@ -59,24 +56,27 @@
                 position: relative;
             }
         }
-
-        .nav-box {
-            width: calc(3%);
-            height: calc(35% - 20px);
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            background: white;
-            text-align: center;
-            cursor: pointer;
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: -25px;
-            bottom: 0;
-
-        }
     }
 }
 
 .white-bg {
     background: white !important;
+}
+
+.nav-box {
+    width: calc(2% + 9px);
+    height: calc(28% - 20px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 77px;
+    bottom: 0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
