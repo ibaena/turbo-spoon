@@ -19,14 +19,11 @@ export default class Intro extends Component {
             if (page < 1 ) {
               page = 1;
             };
-
         }
         else{
             $('.intro-container').hide('slide',{direction:'up'},600);
             page = page +1;
         }
-
-
     });
   }
   render() {

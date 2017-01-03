@@ -37,7 +37,7 @@
             text-align: center;
             padding: 0;
             position: relative;
-            top: 20%;
+            top: 18%;
 
             .menu-item {
                 list-style: none;
@@ -67,4 +67,20 @@
             }
         }
     }
+}
+
+#menu-img-1 {
+    padding: 0;
+    position: absolute;
+    top: -20vh;
+    left: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0.2;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+#menu-item-1 {
+
 }
