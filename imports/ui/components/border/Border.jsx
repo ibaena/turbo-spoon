@@ -14,8 +14,10 @@ export default class Border extends Component {
   }
   render() {
     return (
-      <div className="border-container">
-          <div className="btn-slide-dn">SLide</div>
+      <div className="border-container container">
+          <div id="project-border">
+            <div className="col-md-12"></div>
+          </div>
       </div>
     );
   }
