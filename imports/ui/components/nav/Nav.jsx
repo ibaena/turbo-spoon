@@ -25,8 +25,8 @@ export default class Nav extends Component {
         $('#center-nav').animate({width:'toggle'},1100);
       },800)
       setTimeout( () => {
-        list.animate({height:'toggle'},1800);
-      },1800)
+        list.animate({height:'toggle'},1600);
+      },1200)
     });
 
     list.find('.menu-item-link').on('mouseenter', function() {

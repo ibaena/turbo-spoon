@@ -40,10 +40,10 @@ export default class Intro extends Component {
       <SideList />
         <div className="intro-overlay"></div>
         <div className="container" id="intro-text">
-          <div className="col-sm-8 col-sm-offset-4" id="intro-para">
+          <div className="col-sm-9 col-sm-offset-3" id="intro-para">
             <div id="section-1">
               <p className="intro-one-text">
-              <span className="highlight-text">I’M A WEB DEVELOPER </span>
+              <span className="highlight-text">I’M A WEB DEVELOPER &nbsp;&nbsp;</span>
                 from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group. With web development, my strength lies in the Front End of website and app development.
               </p>
             </div>
