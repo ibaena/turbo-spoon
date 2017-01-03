@@ -6,7 +6,7 @@
     width: 100%;
     background-color: #1e1c27;
     position: absolute;
-    background-image: url('images/intro/ivan-stencil.png');
+    //background-image: url('images/intro/ivan-stencil.png');
     background-size: cover;
     background-position: center;
 
@@ -16,5 +16,27 @@
         width: 100%;
         opacity: 0.7;
         position: absolute;
+    }
+
+    #intro-text {
+        color: white;
+        position: relative;
+        top: 65%;
+        transform: translateY(-35%);
+
+        #intro-para {
+            display: -webkit-inline-box;
+            text-align:justify;
+
+            #section-1 {
+                width: 350px;
+                margin: 10px;
+            }
+
+            #section-2 {
+                width: 350px;
+                margin: 10px;
+            }
+        }
     }
 }

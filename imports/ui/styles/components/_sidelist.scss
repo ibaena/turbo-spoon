@@ -1,0 +1,46 @@
+/****************************
+    SideList Intro Styles
+****************************/
+.sidelist-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+
+    .side-list {
+        width: 100vh;
+        font-size: calc(.42rem + .42vw);
+        transform-origin: top left;
+        transform: rotate(-90deg) translate3d(-100%, 0, 0);
+        z-index: 1;
+        color: white;
+        position: absolute;
+        left: 20%;
+
+        .side-list-item {
+            color: white;
+            display: inline;
+            margin-right: 10vw;
+            z-index: 10;
+        }
+    }
+}
+
+#side-1 {
+    position: absolute;
+    top: 0;
+    right: 35vw;
+}
+
+#side-2 {
+    text-align: center;
+    right: 15vw;
+    position: absolute;
+}
+
+#side-3 {
+    position: absolute;
+    top: 0;
+    right: -6vw;
+}
