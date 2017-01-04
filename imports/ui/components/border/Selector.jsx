@@ -21,11 +21,11 @@ export default class Selector extends Component {
 
     $('input[type=radio]').on('change', function(){
       do {
-          headerHide.fadeOut(400);
-          titleHide.fadeOut(400);
-          descriptionHide.fadeOut(400);
-          imageHide.fadeOut(400);
-          launchHide.fadeOut(400);
+          headerHide.fadeOut(200);
+          titleHide.hide('slide', {direction:'up'},600);
+          descriptionHide.hide('slide', {direction:'down'},600);
+          imageHide.hide('slide', {direction:'right'},400);
+          launchHide.fadeOut(200);
           i++;
         }
       while (i < 1);
@@ -34,54 +34,57 @@ export default class Selector extends Component {
       switch(userSel) {
     case '1':
     $('.intro-container').show('slide',{direction:'up'},600);
+    $('.fancy-menu').find('span').css({
+      'background-color':'white',
+    });
         break;
 
     case '2':
     setTimeout( () => {
       base.find('#header-1').fadeIn(200);
-    },400);
+    },600);
     setTimeout( () => {
-      base.find('#title-1').fadeIn(200);
-      base.find('#description-1').fadeIn(200);
-      base.find('#launch-1').fadeIn(200);
-      base.find('#image-1').fadeIn(200);
-    },400);
+      base.find('#title-1').show('slide', {direction:'up'},500);
+      base.find('#description-1').show('slide', {direction:'down'},500);
+      base.find('#launch-1').fadeIn(100);
+      base.find('#image-1').show('slide', {direction:'right'},600);
+    },1000);
         break;
 
     case '3':
     setTimeout( () => {
-      base.find('#header-2').fadeIn(200);
-    },400);
+      base.find('#header-2').fadeIn(100);
+    },600);
     setTimeout( () => {
-      base.find('#title-2').fadeIn(200);
-      base.find('#description-2').fadeIn(200);
+      base.find('#title-2').show('slide', {direction:'up'},500);
+      base.find('#description-2').show('slide', {direction:'down'},500);
       base.find('#launch-2').fadeIn(200);
-      base.find('#image-2').fadeIn(200);
-    },400);
+      base.find('#image-2').show('slide', {direction:'right'},600);
+    },1000);
         break;
 
     case '4':
     setTimeout( () => {
-      base.find('#header-3').fadeIn(200);
-    },400);
+      base.find('#header-3').fadeIn(100);
+    },600);
     setTimeout( () => {
-      base.find('#title-3').fadeIn(200);
-      base.find('#description-3').fadeIn(200);
+      base.find('#title-3').show('slide', {direction:'up'},500);
+      base.find('#description-3').show('slide', {direction:'down'},500);
       base.find('#launch-3').fadeIn(200);
-      base.find('#image-3').fadeIn(200);
-    },400);
+      base.find('#image-3').show('slide', {direction:'right'},600);
+    },1000);
         break;
 
     case '5':
     setTimeout( () => {
       base.find('#header-4').fadeIn(200);
-    },400);
+    },600);
     setTimeout( () => {
-      base.find('#title-4').fadeIn(200);
-      base.find('#description-4').fadeIn(200);
+      base.find('#title-4').show('slide', {direction:'up'},500);
+      base.find('#description-4').show('slide', {direction:'down'},500);
       base.find('#launch-4').fadeIn(200);
-      base.find('#image-4').fadeIn(200);
-    },400);
+      base.find('#image-4').show('slide', {direction:'right'},600);
+    },1000);
         break;
 
     case '6':
