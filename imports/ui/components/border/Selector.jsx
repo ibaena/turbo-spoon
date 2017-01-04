@@ -17,6 +17,9 @@ export default class Selector extends Component {
     let roleHide = $('.role-wrapper').find('.role-list');
     let roleTitle = $('.role-title');
 
+    let release = 800;
+    let initial = 600;
+
     let base = $('.border-container').find('.project-border');
     let pageCount = 1
     let i = 0;
@@ -55,62 +58,62 @@ export default class Selector extends Component {
       base.find('#launch-1').show('slide', {direction:'down'},400);
     },800);
     setTimeout( () => {
-      base.find('#title-1').show('slide', {direction:'up'},500);
-      base.find('#description-1').show('slide', {direction:'down'},500);
+      base.find('#title-1').show('slide', {direction:'up'},800);
+      base.find('#description-1').show('slide', {direction:'down'},800);
 
-      base.find('#image-1').show('slide', {direction:'right'},600);
-      $('.role-wrapper').find('#role-list-1').show('slide', {direction:'left'},600);
-      roleTitle.show('slide', {direction:'up'},600);
+      base.find('#image-1').show('slide', {direction:'right'},800);
+      $('.role-wrapper').find('#role-list-1').show('slide', {direction:'left'},800);
+      roleTitle.show('slide', {direction:'up'},800);
     },1000);
         break;
 
     case '3':
     setTimeout( () => {
-      base.find('#header-2').show('slide', {direction:'up'},500);
+      base.find('#header-2').show('slide', {direction:'up'},400);
       base.find('#launch-2').show('slide', {direction:'down'},400);
     },800);
     setTimeout( () => {
-      base.find('#title-2').show('slide', {direction:'up'},500);
-      base.find('#description-2').show('slide', {direction:'down'},500);
+      base.find('#title-2').show('slide', {direction:'up'},800);
+      base.find('#description-2').show('slide', {direction:'down'},800);
 
-      base.find('#image-2').show('slide', {direction:'right'},600);
-      $('.role-wrapper').find('#role-list-2').show('slide', {direction:'left'},600);
-      roleTitle.show('slide', {direction:'up'},600);
+      base.find('#image-2').show('slide', {direction:'right'},800);
+      $('.role-wrapper').find('#role-list-2').show('slide', {direction:'left'},800);
+      roleTitle.show('slide', {direction:'up'},800);
     },1000);
         break;
 
     case '4':
     setTimeout( () => {
-      base.find('#header-3').show('slide', {direction:'up'},500);
+      base.find('#header-3').show('slide', {direction:'up'},800);
       base.find('#launch-3').show('slide', {direction:'down'},400);
     },800);
     setTimeout( () => {
-      base.find('#title-3').show('slide', {direction:'up'},500);
-      base.find('#description-3').show('slide', {direction:'down'},500);
+      base.find('#title-3').show('slide', {direction:'up'},800);
+      base.find('#description-3').show('slide', {direction:'down'},800);
 
-      base.find('#image-3').show('slide', {direction:'right'},600);
-      $('.role-wrapper').find('#role-list-3').show('slide', {direction:'left'},600);
-      roleTitle.show('slide', {direction:'up'},600);
+      base.find('#image-3').show('slide', {direction:'right'},800);
+      $('.role-wrapper').find('#role-list-3').show('slide', {direction:'left'},800);
+      roleTitle.show('slide', {direction:'up'},800);
     },1000);
         break;
 
     case '5':
     setTimeout( () => {
-      base.find('#header-4').show('slide', {direction:'up'},500);
+      base.find('#header-4').show('slide', {direction:'up'},400);
       base.find('#launch-4').show('slide', {direction:'down'},400);
     },800);
     setTimeout( () => {
-      base.find('#title-4').show('slide', {direction:'up'},500);
-      base.find('#description-4').show('slide', {direction:'down'},500);
+      base.find('#title-4').show('slide', {direction:'up'},800);
+      base.find('#description-4').show('slide', {direction:'down'},800);
 
-      base.find('#image-4').show('slide', {direction:'right'},600);
-      $('.role-wrapper').find('#role-list-4').show('slide', {direction:'left'},600);
-      roleTitle.show('slide', {direction:'up'},600);
+      base.find('#image-4').show('slide', {direction:'right'},800);
+      $('.role-wrapper').find('#role-list-4').show('slide', {direction:'left'},800);
+      roleTitle.show('slide', {direction:'up'},800);
     },1000);
         break;
 
     case '6':
-        $('.outro-container').show('slide',{direction:'down'},600);
+        $('.outro-container').show('slide',{direction:'down'},800);
         $('.nav-box').addClass('outro-nav');
         $('.fancy-menu').find('span').css({
           'background-color':'white',
