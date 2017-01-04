@@ -24,7 +24,7 @@ export default class Selector extends Component {
     let pageCount = 1
     let i = 0;
 
-    $('input[type=radio]').bind('change', function(){
+    $('input[type=radio]').on('change', function(){
       do {
           headerHide.hide('slide', {direction:'up'},600);
           titleHide.hide('slide', {direction:'up'},600);
