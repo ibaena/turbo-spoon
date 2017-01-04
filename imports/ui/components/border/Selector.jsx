@@ -24,11 +24,11 @@ export default class Selector extends Component {
     let pageCount = 1
     let i = 0;
 
-    $('input[type=radio]').on('change', function(){
+    $('input[type=radio]').bind('change', function(){
       do {
-          headerHide.hide('slide', {direction:'up'},500);
-          titleHide.hide('slide', {direction:'up'},500);
-          descriptionHide.hide('slide', {direction:'down'},500);
+          headerHide.hide('slide', {direction:'up'},600);
+          titleHide.hide('slide', {direction:'up'},600);
+          descriptionHide.hide('slide', {direction:'down'},600);
           imageHide.hide('slide', {direction:'right'},600);
           launchHide.hide('slide', {direction:'down'},500);
           roleHide.hide('slide', {direction:'left'},600);
@@ -50,12 +50,15 @@ export default class Selector extends Component {
     $('.fancy-menu').find('span').css({
       'background-color':'white',
     });
+    setTimeout( () => {
+      $('.page-nav-list').find('#selector-2').prop('checked', true);
+    },400);
         break;
 
     case '2':
     setTimeout( () => {
-      base.find('#header-1').show('slide', {direction:'up'},400);
-      base.find('#launch-1').show('slide', {direction:'down'},400);
+      base.find('#header-1').show('slide', {direction:'up'},600);
+      base.find('#launch-1').show('slide', {direction:'down'},600);
     },800);
     setTimeout( () => {
       base.find('#title-1').show('slide', {direction:'up'},800);
@@ -69,8 +72,8 @@ export default class Selector extends Component {
 
     case '3':
     setTimeout( () => {
-      base.find('#header-2').show('slide', {direction:'up'},400);
-      base.find('#launch-2').show('slide', {direction:'down'},400);
+      base.find('#header-2').show('slide', {direction:'up'},600);
+      base.find('#launch-2').show('slide', {direction:'down'},600);
     },800);
     setTimeout( () => {
       base.find('#title-2').show('slide', {direction:'up'},800);
@@ -99,8 +102,8 @@ export default class Selector extends Component {
 
     case '5':
     setTimeout( () => {
-      base.find('#header-4').show('slide', {direction:'up'},400);
-      base.find('#launch-4').show('slide', {direction:'down'},400);
+      base.find('#header-4').show('slide', {direction:'up'},600);
+      base.find('#launch-4').show('slide', {direction:'down'},600);
     },800);
     setTimeout( () => {
       base.find('#title-4').show('slide', {direction:'up'},800);
