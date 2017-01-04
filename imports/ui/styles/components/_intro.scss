@@ -4,15 +4,15 @@
 .intro-container {
     height: 100vh;
     width: 100%;
-    background-color: #1e1c27;
+    //background-color: #1e1c27;
     position: absolute;
-    //background-image: url('images/intro/ivan-stencil.png');
+    background-image: url('images/intro/ivan-stencil.png');
     background-size: cover;
     background-position: center;
     z-index: 2;
 
     .intro-overlay {
-        background-color: rgba(30, 28, 39, .7);
+        background-color: rgba(30, 28, 39, .75);
         height: 100vh;
         width: 100%;
         position: absolute;
