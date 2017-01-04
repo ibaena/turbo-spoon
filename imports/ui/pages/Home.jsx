@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Intro from '../../ui/components/intro/Intro.jsx';
+import Outro from '../../ui/components/outro/Outro.jsx';
 import Border from '../../ui/components/border/Border.jsx';
 import Nav from '../../ui/components/nav/Nav.jsx';
 
@@ -10,4 +11,5 @@ export const Home = () =>
     <Nav />
     <Intro />
     <Border />
+    <Outro />
   </div>

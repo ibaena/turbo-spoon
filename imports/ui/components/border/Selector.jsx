@@ -30,6 +30,11 @@ export default class Selector extends Component {
           launchHide.hide('slide', {direction:'down'},500);
           roleHide.hide('slide', {direction:'left'},600);
           roleTitle.hide('slide', {direction:'up'},600);
+          $('.outro-container').hide('slide',{direction:'down'},600);
+          $('.nav-box').removeClass('outro-nav');
+          $('.fancy-menu').find('span').css({
+            'background-color':'black',
+          });
           i++;
         }
       while (i < 1);
@@ -105,7 +110,11 @@ export default class Selector extends Component {
         break;
 
     case '6':
-        console.log('Contact Page');
+        $('.outro-container').show('slide',{direction:'down'},600);
+        $('.nav-box').addClass('outro-nav');
+        $('.fancy-menu').find('span').css({
+          'background-color':'white',
+        });
         break;
 
     }

@@ -5,7 +5,7 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    z-index: -1;
+
 
     .project-border {
         border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -76,7 +76,7 @@
 }
 
 .nav-box {
-    width: calc(2% + 9px);
+    width: calc(2% - 10px);
     height: calc(28% - 20px);
     border: 1px solid rgba(0, 0, 0, 0.2);
     background: white;
@@ -85,12 +85,13 @@
     margin: auto;
     position: absolute;
     top: 0;
-    left: 77px;
+    left: 87px;
     bottom: 0;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
+    z-index: 1;
 }
 
 .project-title {
