@@ -7,8 +7,10 @@
     position: absolute;
     z-index: -1;
 
-    #project-border {
-        border: 1px solid rgba(0, 0, 0, 0.2);
+    .project-border {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         width: calc(100% - 200px);
         height: calc(100% - 200px);
         background: none !important;

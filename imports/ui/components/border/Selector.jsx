@@ -9,26 +9,86 @@ export default class Selector extends Component {
   }
 
   componentDidMount(){
+    let headerHide = $('.border-container').find('.project-border').find('.title-box');
+    let titleHide = $('.border-container').find('.project-border').find('.project-title');
+    let descriptionHide = $('.border-container').find('.project-border').find('.project-description');
+    let imageHide = $('.border-container').find('.project-border').find('.project-image');
+    let launchHide = $('.border-container').find('.project-border').find('.launch-box');
+
+    let base = $('.border-container').find('.project-border');
     let pageCount = 1
-    let current = $('.page-nav-list').find('.page-nav-item').find('.selector').val();
+    let i = 0;
+
     $('input[type=radio]').on('change', function(){
-      console.log(this.value);
-    });
-
-    $(window).bind('mousewheel', function(e){
-
-        if(e.originalEvent.wheelDelta /120 > 0) {
-
-            pageCount = pageCount - 1;
-            if (pageCount < 1 ) {
-              pageCount = 1;
-            };
-            if(pageCount = 1){
-            }
+      do {
+          headerHide.fadeOut(400);
+          titleHide.fadeOut(400);
+          descriptionHide.fadeOut(400);
+          imageHide.fadeOut(400);
+          launchHide.fadeOut(400);
+          i++;
         }
-        else{
-            pageCount = pageCount +1;
-        }
+      while (i < 1);
+
+      let userSel = this.value;
+      switch(userSel) {
+    case '1':
+    $('.intro-container').show('slide',{direction:'up'},600);
+        break;
+
+    case '2':
+    setTimeout( () => {
+      base.find('#header-1').fadeIn(200);
+    },400);
+    setTimeout( () => {
+      base.find('#title-1').fadeIn(200);
+      base.find('#description-1').fadeIn(200);
+      base.find('#launch-1').fadeIn(200);
+      base.find('#image-1').fadeIn(200);
+    },400);
+        break;
+
+    case '3':
+    setTimeout( () => {
+      base.find('#header-2').fadeIn(200);
+    },400);
+    setTimeout( () => {
+      base.find('#title-2').fadeIn(200);
+      base.find('#description-2').fadeIn(200);
+      base.find('#launch-2').fadeIn(200);
+      base.find('#image-2').fadeIn(200);
+    },400);
+        break;
+
+    case '4':
+    setTimeout( () => {
+      base.find('#header-3').fadeIn(200);
+    },400);
+    setTimeout( () => {
+      base.find('#title-3').fadeIn(200);
+      base.find('#description-3').fadeIn(200);
+      base.find('#launch-3').fadeIn(200);
+      base.find('#image-3').fadeIn(200);
+    },400);
+        break;
+
+    case '5':
+    setTimeout( () => {
+      base.find('#header-4').fadeIn(200);
+    },400);
+    setTimeout( () => {
+      base.find('#title-4').fadeIn(200);
+      base.find('#description-4').fadeIn(200);
+      base.find('#launch-4').fadeIn(200);
+      base.find('#image-4').fadeIn(200);
+    },400);
+        break;
+
+    case '6':
+
+        break;
+
+}
     });
   }
 

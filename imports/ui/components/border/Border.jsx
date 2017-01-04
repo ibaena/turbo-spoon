@@ -10,9 +10,11 @@ export default class Border extends Component {
 
   }
   componentDidMount(){
-    $('.btn-slide-dn').on('click', () => {
-      $('.intro-container').show('slide',{direction:'up'},600);
-    });
+    $('.border-container').find('.project-border').find('.title-box').hide();
+    $('.border-container').find('.project-border').find('.project-title').hide();
+    $('.border-container').find('.project-border').find('.project-description').hide();
+    $('.border-container').find('.project-border').find('.project-image').hide();
+    $('.border-container').find('.project-border').find('.launch-box').hide();
   }
 
   getProjects() {
@@ -26,20 +28,30 @@ export default class Border extends Component {
 
   renderProjects() {
     return this.getProjects().map((item) => (
-      <div id="project-border" key={item._id}>
-      <div className="title-box"><p>{item.name}</p></div>
-        <div className="col-md-12">
-          Ivan
+        <div key={item._id}>
+          <div className="title-box" id={"header-"+item._id}><p  className="project-header">{item.name}</p></div>
+            <div className="col-md-12 media">
+              <div className="col-md-5 col-md-offset-1">
+                <h1 className="project-title" id={"title-"+item._id}>{item.name}</h1>
+                <p className="project-description" id={"description-"+item._id}>
+                  {item.info}
+                </p>
+              </div>
+              <div className="col-md-6 img-wrapper">
+                <img src={item.image} className="img-responsive project-image" id={"image-"+item._id}/>
+              </div>
+            </div>
+            <div className="launch-box" id={"launch-"+item._id}><p className="project-launch">{item.name}</p></div>
         </div>
-        <div className="launch-box"><p>{item.name}</p></div>
-      </div>
     ))
   }
 
   render() {
     return (
       <div className="border-container container">
-        {this.renderProjects()}
+        <div className="project-border">
+          {this.renderProjects()}
+        </div>
         <div className="nav-box">
           <Selector />
         </div>

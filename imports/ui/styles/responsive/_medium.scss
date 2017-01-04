@@ -1,0 +1,41 @@
+/******************
+  Medium  Media Queries
+******************/
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .page-nav-item {
+        margin-top: 5px !important;
+        margin-bottom: 4px !important;
+        margin-left: 0 !important;
+    }
+
+    .nav-box {
+        left: 82px !important;
+    }
+
+    .title-box {
+        top: -10px !important;
+    }
+
+    .launch-box {
+        bottom: -20px !important;
+        height: calc(10% - 10px) !important;
+    }
+
+    #side-2 {
+        text-align: center;
+        right: 18vw;
+        position: absolute;
+    }
+
+    #side-1 {
+        position: absolute;
+        top: 0;
+        right: 34vw;
+    }
+
+    #side-3 {
+        position: absolute;
+        top: 0;
+        right: -8vw;
+    }
+}
