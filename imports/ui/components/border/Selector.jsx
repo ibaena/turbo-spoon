@@ -14,6 +14,8 @@ export default class Selector extends Component {
     let descriptionHide = $('.border-container').find('.project-border').find('.project-description');
     let imageHide = $('.border-container').find('.project-border').find('.project-image');
     let launchHide = $('.border-container').find('.project-border').find('.launch-box');
+    let roleHide = $('.role-wrapper').find('.role-list');
+    let roleTitle = $('.role-title');
 
     let base = $('.border-container').find('.project-border');
     let pageCount = 1
@@ -21,18 +23,21 @@ export default class Selector extends Component {
 
     $('input[type=radio]').on('change', function(){
       do {
-          headerHide.fadeOut(200);
-          titleHide.hide('slide', {direction:'up'},600);
-          descriptionHide.hide('slide', {direction:'down'},600);
-          imageHide.hide('slide', {direction:'right'},400);
-          launchHide.fadeOut(200);
+          headerHide.hide('slide', {direction:'up'},500);
+          titleHide.hide('slide', {direction:'up'},500);
+          descriptionHide.hide('slide', {direction:'down'},500);
+          imageHide.hide('slide', {direction:'right'},600);
+          launchHide.hide('slide', {direction:'down'},500);
+          roleHide.hide('slide', {direction:'left'},600);
+          roleTitle.hide('slide', {direction:'up'},600);
           i++;
         }
       while (i < 1);
 
-      let userSel = this.value;
-      switch(userSel) {
+  let userSel = this.value;
+  switch(userSel) {
     case '1':
+
     $('.intro-container').show('slide',{direction:'up'},600);
     $('.fancy-menu').find('span').css({
       'background-color':'white',
@@ -41,54 +46,66 @@ export default class Selector extends Component {
 
     case '2':
     setTimeout( () => {
-      base.find('#header-1').fadeIn(200);
-    },600);
+      base.find('#header-1').show('slide', {direction:'up'},400);
+      base.find('#launch-1').show('slide', {direction:'down'},400);
+    },800);
     setTimeout( () => {
       base.find('#title-1').show('slide', {direction:'up'},500);
       base.find('#description-1').show('slide', {direction:'down'},500);
-      base.find('#launch-1').fadeIn(100);
+
       base.find('#image-1').show('slide', {direction:'right'},600);
+      $('.role-wrapper').find('#role-list-1').show('slide', {direction:'left'},600);
+      roleTitle.show('slide', {direction:'up'},600);
     },1000);
         break;
 
     case '3':
     setTimeout( () => {
-      base.find('#header-2').fadeIn(100);
-    },600);
+      base.find('#header-2').show('slide', {direction:'up'},500);
+      base.find('#launch-2').show('slide', {direction:'down'},400);
+    },800);
     setTimeout( () => {
       base.find('#title-2').show('slide', {direction:'up'},500);
       base.find('#description-2').show('slide', {direction:'down'},500);
-      base.find('#launch-2').fadeIn(200);
+
       base.find('#image-2').show('slide', {direction:'right'},600);
+      $('.role-wrapper').find('#role-list-2').show('slide', {direction:'left'},600);
+      roleTitle.show('slide', {direction:'up'},600);
     },1000);
         break;
 
     case '4':
     setTimeout( () => {
-      base.find('#header-3').fadeIn(100);
-    },600);
+      base.find('#header-3').show('slide', {direction:'up'},500);
+      base.find('#launch-3').show('slide', {direction:'down'},400);
+    },800);
     setTimeout( () => {
       base.find('#title-3').show('slide', {direction:'up'},500);
       base.find('#description-3').show('slide', {direction:'down'},500);
-      base.find('#launch-3').fadeIn(200);
+
       base.find('#image-3').show('slide', {direction:'right'},600);
+      $('.role-wrapper').find('#role-list-3').show('slide', {direction:'left'},600);
+      roleTitle.show('slide', {direction:'up'},600);
     },1000);
         break;
 
     case '5':
     setTimeout( () => {
-      base.find('#header-4').fadeIn(200);
-    },600);
+      base.find('#header-4').show('slide', {direction:'up'},500);
+      base.find('#launch-4').show('slide', {direction:'down'},400);
+    },800);
     setTimeout( () => {
       base.find('#title-4').show('slide', {direction:'up'},500);
       base.find('#description-4').show('slide', {direction:'down'},500);
-      base.find('#launch-4').fadeIn(200);
+
       base.find('#image-4').show('slide', {direction:'right'},600);
+      $('.role-wrapper').find('#role-list-4').show('slide', {direction:'left'},600);
+      roleTitle.show('slide', {direction:'up'},600);
     },1000);
         break;
 
     case '6':
-
+        console.log('Contact Page');
         break;
 
 }
