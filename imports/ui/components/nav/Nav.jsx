@@ -22,7 +22,7 @@ export default class Nav extends Component {
       $('.fancy-menu').toggleClass('active');
       $('.nav-wrapper').toggle('slide',{direction:'up'},700);
       setTimeout( () => {
-        $('#center-nav').animate({width:'toggle'},1100);
+        $('#center-nav').animate({width:'toggle'},1200);
       },800);
       setTimeout( () => {
         list.animate({height:'toggle'},1600);
