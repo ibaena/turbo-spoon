@@ -35,6 +35,8 @@
                 top: 50%;
                 transform: translateY(-50%);
                 position: relative;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: calc(1vh + 15px);
             }
         }
 
@@ -56,6 +58,8 @@
                 top: 50%;
                 transform: translateY(-50%);
                 position: relative;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: calc(1vh + 12px);
             }
         }
     }
@@ -90,31 +94,37 @@
 }
 
 .project-title {
-    font-size: calc(4vh + 10px);
+    font-size: calc(10vh + 10px);
     position: relative;
-    top: 10vh;
+    top: 8vh;
     left: 2vw;
+    font-family: 'Tangerine', cursive;
 }
 
 .project-description {
     width: 600px;
     position: relative;
-    top: 15vh;
+    top: 12vh;
     left: 5vw;
-    font-size: calc(60% + 10px);
+    font-size: calc(70% + 10px);
+    letter-spacing: 1px;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 /*Role List*/
 .role-wrapper {
     width: 40%;
     position: absolute;
     bottom: 15%;
-    left: 10%;
+    left: 11%;
 
     .role-title {
         position: absolute;
         text-align: center;
-        bottom: 3em;
+        bottom: 1.5em;
         left: 5em;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: calc(4vh + 15px);
     }
 
     .role-list {
@@ -124,12 +134,16 @@
 
         .role-list-item {
             display: inline;
-            width: 150px;
-            font-size: 15px;
+            width: 160px;
+            font-size: 18px;
+            font-family: 'Cormorant Garamond', serif;
+            color:black;
 
             .role-header {
                 font-weight: bold;
-                font-size: 11px;
+                font-size: 13px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                color:gray;
             }
         }
 

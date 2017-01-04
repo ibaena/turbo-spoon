@@ -108,9 +108,9 @@ export default class Selector extends Component {
         console.log('Contact Page');
         break;
 
+    }
+  });
 }
-    });
-  }
 
   getPage() {
     return [
