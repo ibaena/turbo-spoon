@@ -39,6 +39,7 @@ export default class Intro extends Component {
                 'background-color':'white',
               });
 
+
               headerHide.hide('slide', {direction:'up'},600);
               titleHide.hide('slide', {direction:'up'},600);
               descriptionHide.hide('slide', {direction:'down'},600);
@@ -48,7 +49,6 @@ export default class Intro extends Component {
               roleTitle.hide('slide', {direction:'up'},600);
               $('.outro-container').hide('slide',{direction:'down'},600);
               $('.nav-box').removeClass('outro-nav');
-x
             }
         }
         else{
@@ -56,6 +56,7 @@ x
             $('.fancy-menu').find('span').css({
               'background-color':'black',
             });
+              $('.page-nav-list').find('#selector-2').prop('checked', true);
 
             setTimeout( () => {
               base.find('#header-1').show('slide', {direction:'up'},600);
@@ -69,6 +70,7 @@ x
               $('.role-wrapper').find('#role-list-1').show('slide', {direction:'left'},800);
               roleTitle.show('slide', {direction:'up'},800);
             },1000);
+
 
             page = page +1;
         }
