@@ -17,6 +17,15 @@ export default class Outro extends Component {
     return (
       <div className="outro-container">
 
+        <video loop muted ="img/videoframe.jpg" className="fw-video">
+          <source src="videos/city.mp4" type="video/mp4" />
+        </video>
+
+        <div className="outro-overlay"></div>
+        <hr id="outro-single" />
+        <div className="outro-border">
+
+        </div>
       </div>
     );
   }

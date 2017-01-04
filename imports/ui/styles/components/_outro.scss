@@ -4,14 +4,48 @@
 .outro-container {
     height: 100vh;
     width: 100%;
-    background-color: #1e1c27;
+    //background-color: #1e1c27;
     position: absolute;
-    //background-image: url('images/intro/ivan-stencil.png');
+    //background-image: url('images/intro/nyc.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 
+    .fw-video {
+        position: absolute;
+        width: 100%;
+    }
+
+    .outro-overlay {
+        background-color: rgba(30, 28, 39, .8);
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+
+    .outro-border {
+        border: 1px solid rgba(255, 255, 255, .1);
+        width: calc(100% - 200px);
+        height: calc(100% - 200px);
+        background: none !important;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #outro-single {
+        width: 2000px;
+        transform: rotate(90deg);
+        border: 1px solid rgba(255, 255, 255, .1) !important;
+        position: absolute;
+        right: -1%;
+    }
 }
 
 .outro-nav {
-    background-color: #1e1c27 !important;
+    background-color: rgba(25, 25, 25, .7) !important;
 }
+/*Video*/

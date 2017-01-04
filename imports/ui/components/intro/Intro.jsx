@@ -52,6 +52,7 @@ export default class Intro extends Component {
             }
         }
         else{
+          if (page === 2){
             $('.intro-container').hide('slide',{direction:'up'},600);
             $('.fancy-menu').find('span').css({
               'background-color':'black',
@@ -70,7 +71,7 @@ export default class Intro extends Component {
               $('.role-wrapper').find('#role-list-1').show('slide', {direction:'left'},800);
               roleTitle.show('slide', {direction:'up'},800);
             },1000);
-
+          }
 
             page = page +1;
         }

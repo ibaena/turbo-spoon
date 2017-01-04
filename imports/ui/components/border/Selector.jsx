@@ -121,6 +121,9 @@ export default class Selector extends Component {
         $('.fancy-menu').find('span').css({
           'background-color':'white',
         });
+        setTimeout( () => {
+          $('.fw-video').get(0).play()
+        },900)
         break;
 
     }
