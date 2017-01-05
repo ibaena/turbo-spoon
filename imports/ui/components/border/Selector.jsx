@@ -16,6 +16,7 @@ export default class Selector extends Component {
     let launchHide = $('.border-container').find('.project-border').find('.launch-box');
     let roleHide = $('.role-wrapper').find('.role-list');
     let roleTitle = $('.role-title');
+    $('.contact-list').hide();
 
     let release = 800;
     let initial = 600;
@@ -38,6 +39,7 @@ export default class Selector extends Component {
           $('.fancy-menu').find('span').css({
             'background-color':'black',
           });
+          $('.contact-list').hide('slide',{direction:'down'},800);
           i++;
         }
       while (i < 1);
@@ -123,7 +125,10 @@ export default class Selector extends Component {
         });
         setTimeout( () => {
           $('.fw-video').get(0).play()
-        },900)
+        },900);
+        setTimeout( () => {
+          $('.contact-list').show('slide',{direction:'down'},800);
+        },1500)
         break;
 
     }

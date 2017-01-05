@@ -34,6 +34,12 @@ export default class Contact extends Component {
     return (
       <div className="contact-container container">
         <div className="col-md-12 icons-col">
+          <div className="col-md-6">
+            <h3 className="col-title">Other Projects</h3>
+          </div>
+          <div className="col-md-6">
+            <h3 className="col-title">Lets Get in Touch</h3>
+          </div>
           <ul className="contact-list">
             {this.renderIcons()}
           </ul>
