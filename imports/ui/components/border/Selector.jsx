@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import anime from 'animejs'
 
 // Intro component
 export default class Selector extends Component {
@@ -128,7 +129,20 @@ export default class Selector extends Component {
         },900);
         setTimeout( () => {
           $('.contact-list').show('slide',{direction:'down'},800);
-        },1500)
+
+          setTimeout( () => {
+            anime({
+              targets: '.contact-list-item',
+              translateX: function() { return anime.random(10, 14) + 'rem'; },
+              scale: function() { return anime.random(10,20) / 10; },
+              rotate: function() { return anime.random(-360,360); },
+              duration: function() { return anime.random(1000,2000); },
+              direction: 'alternate',
+              loop: false
+            });
+          },100)
+        },1500);
+
         break;
 
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import anime from 'animejs'
 
 
 // Contact component
@@ -18,6 +19,7 @@ export default class Contact extends Component {
 
     ];
   }
+
   renderIcons() {
     return this.getIcons().map((item) => (
       <li className="contact-list-item" key={item._id}>
@@ -28,7 +30,17 @@ export default class Contact extends Component {
     ))
   }
   componentDidMount(){
-
+    $('.square').on('click', function() {
+      anime({
+        targets: '.square',
+        translateX: function() { return anime.random(10, 14) + 'rem'; },
+        scale: function() { return anime.random(10,20) / 10; },
+        rotate: function() { return anime.random(-360,360); },
+        duration: function() { return anime.random(1000,2000); },
+        direction: 'alternate',
+        loop: false
+      });
+    });
   }
   render() {
     return (
@@ -36,6 +48,7 @@ export default class Contact extends Component {
         <div className="col-md-12 icons-col">
           <div className="col-md-6">
             <h3 className="col-title">Other Projects</h3>
+            <div className="blue square"></div>
           </div>
           <div className="col-md-6">
             <h3 className="col-title">Lets Get in Touch</h3>

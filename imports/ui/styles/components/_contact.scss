@@ -13,9 +13,10 @@
         padding: 0;
 
         .col-title {
-            color:white;
+            color: white;
             text-align: center;
         }
+
         .contact-list {
             position: absolute;
             padding: 0;
@@ -44,4 +45,12 @@
 
 .grow:hover {
     transform: scale(1.1);
+}
+
+.square {
+    width: 10rem;
+    height: 10rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: blue;
 }

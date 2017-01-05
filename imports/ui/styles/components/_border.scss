@@ -6,7 +6,6 @@
     width: 100%;
     position: absolute;
 
-
     .project-border {
         border-left: 1px solid rgba(0, 0, 0, 0.2);
         border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -61,6 +60,30 @@
                 font-family: 'Open Sans Condensed', sans-serif;
                 font-size: calc(1vh + 12px);
             }
+        }
+
+        .launch-box:hover {
+            p {
+                color: white !important;
+                z-index: 1;
+            }
+        }
+
+        .launch-box::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: black;
+            transform-origin: top;
+            transition: height 0.55s ease;
+
+        }
+
+        .launch-box:hover::after {
+            width: 100%;
         }
     }
 }
@@ -137,13 +160,13 @@
             width: 160px;
             font-size: 18px;
             font-family: 'Cormorant Garamond', serif;
-            color:black;
+            color: black;
 
             .role-header {
                 font-weight: bold;
                 font-size: 13px;
                 font-family: 'Open Sans Condensed', sans-serif;
-                color:gray;
+                color: gray;
             }
         }
 
@@ -156,6 +179,7 @@
             position: relative;
             left: 140px;
         }
+
         .role-list-item:nth-child(4) {
             position: relative;
             left: 210px;
@@ -164,5 +188,5 @@
 }
 
 .media {
-  position: absolute;
+    position: absolute;
 }
