@@ -142,9 +142,7 @@ export default class Selector extends Component {
             });
           },100)
         },1500);
-
         break;
-
     }
   });
 }
