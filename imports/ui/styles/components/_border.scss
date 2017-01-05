@@ -121,7 +121,7 @@
     .role-title {
         position: absolute;
         text-align: center;
-        bottom: 1.5em;
+        bottom: 1.3em;
         left: 5em;
         font-family: 'Pathway Gothic One', sans-serif;
         font-size: calc(4vh + 15px);
@@ -161,4 +161,8 @@
             left: 210px;
         }
     }
+}
+
+.media {
+  position: absolute;
 }

@@ -4,21 +4,22 @@
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
     .page-nav-item {
         margin-top: 5px !important;
-        margin-bottom: 4px !important;
+        margin-bottom: 4px;
         margin-left: 0 !important;
     }
 
     .nav-box {
-        left: 82px !important;
+        left: 92px;
+        height: calc(28% - -2px);
     }
 
-    .title-box {
-        top: -10px !important;
+    .role-wrapper {
+        bottom: 15%;
+        left: 10%;
     }
 
-    .launch-box {
-        bottom: -20px !important;
-        height: calc(10% - 10px) !important;
+    .role-list-item {
+        font-size: 15px !important;
     }
 
     #side-2 {
@@ -37,5 +38,64 @@
         position: absolute;
         top: 0;
         right: -8vw;
+    }
+
+    .project-title {
+        font-size: calc(10vh + -5px);
+        position: relative;
+        top: 4vh;
+        left: 0;
+        font-family: 'Tangerine', cursive;
+    }
+
+    .project-description {
+        width: 500px;
+        position: relative;
+        top: 8vh;
+        left: 3vw;
+        font-size: calc(70% + 5px);
+        letter-spacing: 1px;
+        text-align: justify;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    .project-image {
+        width: 600px;
+        position: relative;
+        left: 100px;
+    }
+
+    .border-container {
+        .project-border {
+            .title-box {
+                width: 170px;
+                height: 40px;
+                background: white;
+            }
+
+            .launch-box {
+                width: calc(13%);
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background: white;
+                position: absolute;
+                left: 0;
+                text-align: center;
+                cursor: pointer;
+                right: 0;
+                margin: auto;
+                bottom: -20px;
+                height: calc(10% - 10px);
+            }
+        }
+    }
+
+    .outro-container {
+        #outro-single {
+            width: 2000px;
+            transform: rotate(90deg);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            position: absolute;
+            left: -25%;
+        }
     }
 }
