@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SideList from '../sidelist/SideList.jsx';
+import Contact from './Contact.jsx';
 
 // Intro component
 export default class Outro extends Component {
@@ -24,7 +24,7 @@ export default class Outro extends Component {
         <div className="outro-overlay"></div>
         <hr id="outro-single" />
         <div className="outro-border">
-
+            <Contact />
         </div>
       </div>
     );

@@ -2,15 +2,14 @@
   Medium  Media Queries
 ******************/
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
-    .page-nav-item {
-        margin-top: 5px !important;
-        margin-bottom: 4px;
-        margin-left: 0 !important;
-    }
-
+.selector-container .page-nav-list .page-nav-item {
+  margin-top: 5px;
+  margin-bottom: 4px;
+  margin-left: 0;
+}
     .nav-box {
         left: 92px;
-        height: calc(28% - -2px);
+        height: calc(28% - 20px);
     }
 
     .role-wrapper {
