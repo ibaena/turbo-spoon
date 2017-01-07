@@ -34,6 +34,11 @@
                 display: inline-block;
                 margin: 20px;
                 cursor: pointer;
+
+                .contact-image {
+                  max-width: 80px;
+                  width: 100%;
+                }
             }
         }
     }

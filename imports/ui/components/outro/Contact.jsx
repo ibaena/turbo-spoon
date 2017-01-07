@@ -46,13 +46,7 @@ export default class Contact extends Component {
     return (
       <div className="contact-container container">
         <div className="col-md-12 icons-col">
-          <div className="col-md-6">
-            <h2 className="col-title">Other Projects</h2>
-              <ul>
-                <li>Project</li>
-              </ul>
-          </div>
-          <div className="col-md-6">
+          <div className="col-md-8 col-md-offset-2">
             <h2 className="col-title">Lets Get in Touch</h2>
             <p>Lorem Ipsum</p>
           </div>

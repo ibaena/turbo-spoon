@@ -2,11 +2,12 @@
   Medium  Media Queries
 ******************/
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
-.selector-container .page-nav-list .page-nav-item {
-  margin-top: 5px;
-  margin-bottom: 4px;
-  margin-left: 0;
-}
+    .selector-container .page-nav-list .page-nav-item {
+        margin-top: 5px;
+        margin-bottom: 4px;
+        margin-left: 0;
+    }
+
     .nav-box {
         left: 92px;
         height: calc(28% - 20px);
@@ -15,10 +16,12 @@
     .role-wrapper {
         bottom: 15%;
         left: 10%;
-    }
 
-    .role-list-item {
-        font-size: 15px !important;
+        .role-list {
+            .role-list-item {
+                font-size: calc(1vw + 1px);
+            }
+        }
     }
 
     #side-2 {
@@ -40,7 +43,7 @@
     }
 
     .project-title {
-        font-size: calc(10vh + -5px);
+        font-size: calc(5vw + -5px);
         position: relative;
         top: 4vh;
         left: 0;
@@ -52,14 +55,14 @@
         position: relative;
         top: 8vh;
         left: 3vw;
-        font-size: calc(70% + 5px);
+        font-size: calc(1vw + 3px);
         letter-spacing: 1px;
         text-align: justify;
         font-family: 'Open Sans Condensed', sans-serif;
     }
 
     .project-image {
-        width: 600px;
+        width: 100%;
         position: relative;
         left: 100px;
     }

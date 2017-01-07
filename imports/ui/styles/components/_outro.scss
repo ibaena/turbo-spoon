@@ -35,11 +35,11 @@
     }
 
     #outro-single {
-        width: 2000px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(255, 255, 255, 0.03);
-        position: absolute;
-        right: -1%;
+      width: 2000px;
+      transform: rotate(90deg);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      position: absolute;
+      left: calc(-29% + 7px);
     }
 }
 
